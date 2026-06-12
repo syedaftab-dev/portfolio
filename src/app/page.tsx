@@ -906,12 +906,11 @@ function ConnectSection() {
     setIsSubmitting(true);
     
     try {
-      // NOTE: Replace "YOUR_ACCESS_KEY_HERE" with a free access key from https://web3forms.com
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          access_key: "YOUR_ACCESS_KEY_HERE",
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
           name: formState.name,
           email: formState.email,
           message: formState.message,
