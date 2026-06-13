@@ -16,8 +16,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Carter | Visual Engineer & Full-Stack Developer",
-  description: "A stunning, interactive developer portfolio showcasing bleeding-edge web technologies, visual designs, and systems architecture.",
+  title: "Syed Aftab | Aspiring Software Engineer",
+  description: "",
 };
 
 export default function RootLayout({
